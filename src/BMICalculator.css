@@ -1,0 +1,183 @@
+/* BMICalculator.css */
+
+/* Container styles */
+.bmi-calculator-container {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Colors based on health status */
+.purple {
+  background-color: #8e44ad; /* Purple */
+  color: #fff;
+}
+
+.green {
+  background-color: #2ecc71; /* Green */
+  color: #fff;
+}
+
+.yellow {
+  background-color: #f39c12; /* Yellow */
+  color: #333;
+}
+
+.red {
+  background-color: #e74c3c; /* Red */
+  color: #fff;
+}
+
+/* Additional styles for the content */
+.content {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+h2 {
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif; /* Updated font family */
+  color: #3498db; /* Blue */
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+h2:hover {
+  color: #2980b9; /* Darker blue on hover */
+}
+
+form {
+  text-align: center; /* Center the form content */
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: left; /* Align labels to the left */
+  transition: color 0.3s ease-in-out;
+}
+
+form label:hover {
+  color: #00274e;
+}
+
+/* Updated styles for input and select */
+input,
+select {
+  width: 100%; /* Full width on small screens; adjust as needed */
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #004080;
+  border-radius: 10px;
+  transition: border-color 0.3s ease-in-out;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Updated styles for labels */
+label {
+  width: 100%; /* Full width on small screens; adjust as needed */
+  display: inline-block;
+  text-align: left; /* Align labels to the left */
+  margin-bottom: 5px; /* Adjust the margin between label and input */
+}
+
+input:focus,
+select:focus {
+  border-color: #00274e;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button {
+  background: #004080;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 30px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #00274e;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 15px;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+p:hover {
+  color: #00274e;
+}
+
+.additional-info {
+  text-align: center;
+  color: #000000;
+}
+
+/* Updated styles for result message and health status */
+.result-message,
+.status-message {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 24px;
+}
+
+.result-message {
+  background-color: #00274e;
+  color: #000000;
+}
+
+.status-message {
+  color: #333; /* Change the font color for the health status */
+}
+
+.status-message:hover {
+  background-color: #81add5;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+  input,
+  select,
+  label {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
